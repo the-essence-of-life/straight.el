@@ -150,7 +150,7 @@
         (url-retrieve-synchronously
          (format
           (concat "https://ghproxy.com/https://raw.githubusercontent.com/"
-                  "the-essence-of-life/straight.el/install/%s/straight.el")
+                  "the-essence-of-life/straight.el/master/straight.el")
           (substring (symbol-name version) 1))
          'silent 'inhibit-cookies)
       ;; In case of 404, that means the version identifier is unknown.
