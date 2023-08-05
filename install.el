@@ -149,8 +149,8 @@
     (with-current-buffer
         (url-retrieve-synchronously
          (format
-          (concat "https://raw.githubusercontent.com/"
-                  "radian-software/straight.el/install/%s/straight.el")
+          (concat "https://ghproxy.com/https://raw.githubusercontent.com/"
+                  "the-essence-of-life/straight.el/install/%s/straight.el")
           (substring (symbol-name version) 1))
          'silent 'inhibit-cookies)
       ;; In case of 404, that means the version identifier is unknown.
